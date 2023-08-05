@@ -3,7 +3,7 @@ import imgHousing from "../../../image/housing.jpeg";
 
 const Housing = () => {
     return (
-        <ContainerHousing>
+        <ContainerHousing id="intro">
             <TitleHousing>El Complejo</TitleHousing>
             <ImgContainerHousing>
                 <ImgHousing src={imgHousing}/>

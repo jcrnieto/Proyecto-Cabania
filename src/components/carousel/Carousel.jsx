@@ -12,7 +12,7 @@ import 'swiper/css/scrollbar';
 const carouselStyle = ({slidesInfo}) => {
     console.log(slidesInfo)
   return (
-     <ContainerCarousel>
+     <ContainerCarousel id="galeria">
         <TitleCarousel> Galeria de Foros</TitleCarousel>
         <ContainerSliders>
         <Swiper
@@ -20,7 +20,7 @@ const carouselStyle = ({slidesInfo}) => {
           spaceBetween={1}
           slidesPerView={2}
           navigation
-          scrollbar={{ draggable: true }}
+         //  scrollbar={{ draggable: true }}
           >
             {
                slidesInfo.map(slide =>(

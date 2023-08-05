@@ -3,9 +3,10 @@ import styled from 'styled-components';
 export const ContainerHousing = styled.section`
    height: 100vh;
    width: 85%;
-   background-color: aquamarine;
+   background-color: #edcae8;
    margin-left: 200px;
-
+   margin-top:0;
+   padding-top:1px ;
 `
 
 export const TitleHousing = styled.h1`

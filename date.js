@@ -1,3 +1,5 @@
+//import {PiGarageBold} from 'react-icons/pi';
+
 import balcon from "./image/balcon-slides.jpeg";
 import baño1 from "./image/baño1-slide.jpeg";
 import baño2 from "./image/baño2-slide.jpeg";
@@ -10,6 +12,8 @@ import garage from "./image/garage-slides.jpeg";
 import living from "./image/living-slide.jpeg";
 import pileta1 from "./image/pileta1-slide.jpeg";
 import pileta2 from "./image/pileta2-slides.jpeg";
+
+
 
  const slidesInfo = [
     {
@@ -74,4 +78,29 @@ import pileta2 from "./image/pileta2-slides.jpeg";
     },
 ]
 
-export default slidesInfo;
+
+// const infoService = [
+//     {
+//         id:1,
+//         description:"baño completo con ducha",
+//         icon: <PiGarageBold/>
+//     },
+//     {
+//         id:2,
+//         description:"living comedor con cocina totalmente equipada",
+//         icon: <PiGarageBold/>
+//     },
+//     {
+//         id:3,
+//         description:"cochera cubierta con asador incluido",
+//         icon: <PiGarageBold/>
+//     },
+//     {
+//         id:4,
+//         description:"tv satelital y wifi",
+//         icon: <PiGarageBold/>
+//     }
+// ]
+
+export default slidesInfo
+

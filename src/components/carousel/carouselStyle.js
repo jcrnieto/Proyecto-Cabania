@@ -3,15 +3,17 @@ import styled from 'styled-components';
 export const ContainerCarousel = styled.section`
    height: 100vh;
    width: 85%;
-   background-color: orchid;
+   background-color: #bdf0dc;
    margin-left: 200px;
 `
 
 export const TitleCarousel = styled.h1`
    color: black;
    text-align: center;
-   margin-top: 40px;
-   margin-bottom: 80px;
+   margin-top: 0px;
+   padding-top: 20px;
+   padding-bottom: 20px;
+   font-size: 30px;
 `
 
 export const ContainerSliders = styled.div`
