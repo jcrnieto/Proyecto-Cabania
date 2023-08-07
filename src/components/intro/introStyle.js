@@ -10,16 +10,29 @@ export const ContainerIntro = styled.section`
    height: 100vh;
    margin-left: 200px;
   
-`
+   @media (max-width: 767px) {
+      margin-left:0;
+      width:auto;
+   }
+ `
 
 export const LogoContainerIntro = styled.div`
   text-align: center;
   padding-top: 40px;
+
+  @media (max-width: 767px) {
+    width: 3x;
+    height: 3px;
+   }
 `
 
 export const LogoImageIntro = styled.img`
   width: 300px;
   height: 300px;
+
+  @media (max-width: 767px) {
+   
+  }
 `
 
 export const DescriptionIntro = styled.h3`
@@ -27,11 +40,23 @@ export const DescriptionIntro = styled.h3`
   width: 800px;
   font-size: 25px;
   margin-left: 150px;
+
+  @media (max-width: 767px) {
+    margin-top: 350px;
+    margin-left: 20px;
+    font-size: 20px;
+    width: auto;
+  }
 `
 
 export const ContainerButtonIntro = styled.div`
   text-align: center;
   margin-top: 40px;
+
+  @media (max-width: 767px) {
+    text-align: center;
+    margin-top: 80px;
+  }
 `
 
 export const ButtonIntro = styled.button`
@@ -60,6 +85,8 @@ export const ButtonIntro = styled.button`
   &:focus {
   box-shadow: 0 4px 3px 1px #FCFCFC, 0 6px 8px #D6D7D9, 0 -4px 4px #CECFD1, 0 -6px 4px #FEFEFE, inset 0 0 5px 3px #999, inset 0 0 30px #aaa;
   }
+
+  
 `
 
 export const EnlaceButtonIntro = styled.a`

@@ -6,6 +6,12 @@ export const FormContainer = styled.section`
   background-color: #e8e8e8;
   margin-left: 200px;
   padding-top: 80px;
+
+  @media (max-width: 767px) {
+      margin-left: 0; 
+      width: auto;
+      height: 90%;
+   }
 `
 export const ContainerForm = styled.form`
   display: flex;
@@ -25,6 +31,14 @@ export const ContainerForm = styled.form`
     border: 1px solid #171717;
     box-shadow: 10px 10px 0px #666666;
   }
+
+  @media (max-width: 767px) {
+     margin-left: 0;
+     width:auto;
+     margin-bottom: 80px;
+     margin-left: 10px;
+     margin-right: 10px;
+   }
 `
 
 export const TextForm = styled.p`

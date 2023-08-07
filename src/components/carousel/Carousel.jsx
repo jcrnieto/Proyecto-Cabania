@@ -18,9 +18,11 @@ const carouselStyle = ({slidesInfo}) => {
         <Swiper
           modules={[Navigation, Scrollbar, A11y]}
           spaceBetween={1}
-          slidesPerView={2}
+          //slidesPerView={2}
+          slidesPerView={window.innerWidth > 767 ? 2 : 1}
           navigation
-         //  scrollbar={{ draggable: true }}
+          loop={true}
+         
           >
             {
                slidesInfo.map(slide =>(

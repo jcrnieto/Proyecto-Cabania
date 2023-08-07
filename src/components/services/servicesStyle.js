@@ -7,7 +7,12 @@ export const ContainerService = styled.section`
    margin-left: 200px;
    padding: 0;
    padding-top:1px;
-   
+
+    @media (max-width: 767px) {
+      margin-left: 0;
+      width:auto;
+      height: auto;
+   }
 `
 
 export const TitleService = styled.h1`
@@ -21,6 +26,10 @@ export const TitleService = styled.h1`
 export const ContainerCard = styled.div`
    display: flex;
    
+   @media (max-width: 767px) {
+      display: flex;
+      flex-direction: column;    
+   }
 `
 
 export const ServiceCard = styled.div`
@@ -30,6 +39,11 @@ export const ServiceCard = styled.div`
    height: 280px;
    margin-left: 70px;
    border-radius: 40px;
+
+   @media (max-width: 767px) {
+      margin-top: 15px;
+      margin-bottom: 15px;
+   }
    
 `
 

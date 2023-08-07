@@ -7,6 +7,14 @@ export const ContainerHousing = styled.section`
    margin-left: 200px;
    margin-top:0;
    padding-top:1px ;
+
+   @media (max-width: 767px) {
+      display: flex;
+      flex-direction: column;
+      margin-left: 0; 
+      width:auto;
+      height: auto;   
+   }
 `
 
 export const TitleHousing = styled.h1`
@@ -25,11 +33,11 @@ export const TextHousing = styled.p`
 `
 
 export const ImgContainerHousing = styled.div`
-   
+
 `
 
 export const ImgHousing = styled.img`
-   width: 300px; 
+  width: 300px; 
   height: 300px; 
   object-fit: cover;
   shape-margin: 0rem;
@@ -37,4 +45,8 @@ export const ImgHousing = styled.img`
   float: right;
   border-radius: 20px;
   margin-right: 10px;
+
+  @media (max-width: 767px) {
+     margin-right: 40px;
+   }
 `

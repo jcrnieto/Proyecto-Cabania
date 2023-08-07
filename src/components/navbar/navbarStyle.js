@@ -1,12 +1,20 @@
 import styled from 'styled-components';
 
+export const ContainerGeneralNavbar = styled.div`
+`
+
 
 export const ContainerNavbar = styled.div`
   position: fixed;
   width: 200px;
   height: 100%;
   background-color: #a1031d;
+
+  @media (max-width: 768px){
+      display: none;
+   }  
 `
+
 export const UlListNavbar = styled.ul`
   list-style: none;
   text-align: center;
@@ -71,4 +79,25 @@ export const MessageIconNavbar = styled.div`
   margin-right: 8px;
   font-size: 18px;
 `
+
+//  export const MenuHamburguerNavbar = styled.div`
+//    font-size: 34px;
+//    color: black;
+//    display: none;
+
+//    @media (max-width: 768px){
+//       display: block;
+//    }
+//   `
+  
+export const ContainerHamburguerNavbar = styled.div`
+
+`
+
+export const MenuItemsNavbar = styled.div`
+       
+`
+ 
+
+
 

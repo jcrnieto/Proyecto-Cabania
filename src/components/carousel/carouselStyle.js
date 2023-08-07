@@ -5,6 +5,13 @@ export const ContainerCarousel = styled.section`
    width: 85%;
    background-color: #bdf0dc;
    margin-left: 200px;
+
+   @media (max-width: 767px) {
+      margin-left: 0;
+      width:auto;  
+      height: auto;
+      
+   }
 `
 
 export const TitleCarousel = styled.h1`
