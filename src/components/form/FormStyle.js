@@ -36,8 +36,8 @@ export const ContainerForm = styled.form`
      margin-left: 0;
      width:auto;
      margin-bottom: 80px;
-     margin-left: 10px;
-     margin-right: 10px;
+     margin-left: 13px;
+     margin-right: 13px;
    }
 `
 

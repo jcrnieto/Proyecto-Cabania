@@ -13,7 +13,8 @@ export const ContainerHousing = styled.section`
       flex-direction: column;
       margin-left: 0; 
       width:auto;
-      height: auto;   
+      height: auto;
+     
    }
 `
 
@@ -33,7 +34,10 @@ export const TextHousing = styled.p`
 `
 
 export const ImgContainerHousing = styled.div`
-
+   @media (max-width: 767px) {
+     margin-right: auto; 
+     margin-left: auto;
+   }
 `
 
 export const ImgHousing = styled.img`
@@ -46,7 +50,5 @@ export const ImgHousing = styled.img`
   border-radius: 20px;
   margin-right: 10px;
 
-  @media (max-width: 767px) {
-     margin-right: 40px;
-   }
+  
 `

@@ -28,7 +28,8 @@ export const ContainerCard = styled.div`
    
    @media (max-width: 767px) {
       display: flex;
-      flex-direction: column;    
+      flex-direction: column;
+      
    }
 `
 
@@ -43,6 +44,8 @@ export const ServiceCard = styled.div`
    @media (max-width: 767px) {
       margin-top: 15px;
       margin-bottom: 15px;
+     margin-left: auto;
+     margin-right: auto;
    }
    
 `

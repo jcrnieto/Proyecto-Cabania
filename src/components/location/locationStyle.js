@@ -10,7 +10,8 @@ export const LocationContainer = styled.section`
 
    @media (max-width: 767px) {
       margin-left: 0;
-      width:auto;    
+      width:auto; 
+      height: 80%;
    }
 `
 
@@ -33,8 +34,8 @@ export const ContainerMapLocation = styled.div`
     margin-top: 40px;
 
     @media (max-width: 767px) {
-      margin-left: 0;
       width:300px;
-      margin-left: 30px ;
+      margin-left: auto;
+      margin-right: auto;
    }
 `
