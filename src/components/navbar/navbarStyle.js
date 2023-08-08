@@ -37,15 +37,15 @@ export const ContainerLogoNavbar = styled.div`
 `
 
 export const LogoNavbar = styled.img`
-   width: 100px;
-   height: 100px;
+   width: 150px;
+   height: 150px;
 `
 
 export const RedesContainerNavbar = styled.div`
    display: flex;
    justify-content: center;
    align-items: flex-end;
-   margin-top: 150px;
+   margin-top: 100px;
 `
 
 export const WattsapIconNavbar = styled.div`

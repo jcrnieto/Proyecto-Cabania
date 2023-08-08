@@ -5,9 +5,10 @@ import {
    DescriptionIntro, 
    ButtonIntro,
    ContainerButtonIntro,
-   EnlaceButtonIntro
+   EnlaceButtonIntro,
+   ContainerOpacityIntro
   } from "./introStyle";
-import logo from '../../../image/logo-fundacion.png';
+import logo from '../../../image/logo-negro.png';
 
 const Intro = () => {
 
@@ -21,6 +22,7 @@ const Intro = () => {
 
   return (
     <ContainerIntro>
+      <ContainerOpacityIntro>
          <LogoContainerIntro>
               <LogoImageIntro src={logo}/>
          </LogoContainerIntro>
@@ -35,7 +37,8 @@ const Intro = () => {
          </ButtonIntro>
          </EnlaceButtonIntro>
          </ContainerButtonIntro>
-
+      </ContainerOpacityIntro>
+      
     </ContainerIntro>   
   )
 }

@@ -9,6 +9,7 @@ export const ContainerIntro = styled.section`
    width: 85%;
    height: 100vh;
    margin-left: 200px;
+   padding-top: 30px;
   
    @media (max-width: 767px) {
       margin-left:0;
@@ -18,9 +19,8 @@ export const ContainerIntro = styled.section`
 
 export const LogoContainerIntro = styled.div`
   text-align: center;
-  padding-top: 40px;
 
-  @media (max-width: 767px) {
+@media (max-width: 767px) {
     width: 3x;
     height: 3px;
    }
@@ -29,6 +29,7 @@ export const LogoContainerIntro = styled.div`
 export const LogoImageIntro = styled.img`
   width: 300px;
   height: 300px;
+  
 
   @media (max-width: 767px) {
    
@@ -39,7 +40,10 @@ export const DescriptionIntro = styled.h3`
   text-align: center;
   width: 800px;
   font-size: 25px;
-  margin-left: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  color:#111212;
+  
 
   @media (max-width: 767px) {
     margin-top: 350px;
@@ -52,6 +56,7 @@ export const DescriptionIntro = styled.h3`
 export const ContainerButtonIntro = styled.div`
   text-align: center;
   margin-top: 40px;
+  margin-top: 0;
 
   @media (max-width: 767px) {
     text-align: center;
@@ -91,4 +96,18 @@ export const ButtonIntro = styled.button`
 
 export const EnlaceButtonIntro = styled.a`
 
+`
+
+export const ContainerOpacityIntro = styled.div`
+  width: 900px;
+  height: 500px;
+  background-color: rgba(255, 255, 255, 0.2);;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 30px;
+  padding-bottom: 40px;
+  
+  @media (max-width: 767px) {
+     width: auto;
+  }
 `

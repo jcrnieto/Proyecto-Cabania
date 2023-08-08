@@ -26,7 +26,7 @@ import { BsImages } from 'react-icons/bs';
 import { FaBed } from 'react-icons/fa';
 import { BiMessageDetail } from 'react-icons/bi';
 // import { HiOutlineMenuAlt1 } from 'react-icons/hi';
-import logo from '../../../image/logo-fundacion.png';
+import logo from '../../../image/logo-blanco.png';
 import MenuHamburguer from "../menuHamburguer/MenuHamburguer";
 
 
