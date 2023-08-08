@@ -24,16 +24,31 @@ export const TitleCarousel = styled.h1`
 `
 
 export const ContainerSliders = styled.div`
-
+   
 `
 
 export const SlideContainer = styled.div`
-   margin-left: 60px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
 `
 
 export const ImgSlide = styled.img`
    width: 450px;
    height: 450px;
    object-fit: cover;
-   border-radius: 50px;
+   border-radius: 50px; 
+   display: block;
+   object-fit: cover;
+
+     @media (max-width: 767px) {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 50px;
+   }  
+`
+export const ContainerImg = styled.div`
+
 `

@@ -43,6 +43,7 @@ export const DescriptionIntro = styled.h3`
   margin-left: auto;
   margin-right: auto;
   color:#111212;
+  margin-top: -10px;
   
 
   @media (max-width: 767px) {
@@ -106,6 +107,7 @@ export const ContainerOpacityIntro = styled.div`
   margin-right: auto;
   border-radius: 30px;
   padding-bottom: 40px;
+  padding-top: 40px;
   
   @media (max-width: 767px) {
      width: auto;
