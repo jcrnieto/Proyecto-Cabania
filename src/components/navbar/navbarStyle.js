@@ -11,7 +11,7 @@ export const ContainerNavbar = styled.div`
   background-color: #a1031d;
 
   @media (max-width: 768px){
-      display: none;
+    z-index: 999;  
    }  
 `
 
@@ -80,17 +80,20 @@ export const MessageIconNavbar = styled.div`
   font-size: 18px;
 `
 
-//  export const MenuHamburguerNavbar = styled.div`
-//    font-size: 34px;
-//    color: black;
-//    display: none;
-
-//    @media (max-width: 768px){
-//       display: block;
-//    }
-//   `
-  
 export const ContainerHamburguerNavbar = styled.div`
+  display: none;
+
+  @media (max-width: 768px){
+       display: block;
+       position: fixed;
+       z-index: 999;
+       margin-left: 55%;
+       margin-top: 10px;
+   }
+`
+
+export const ButtonMenuHamburguer = styled.button`
+     font-size: 20px;
 
 `
 

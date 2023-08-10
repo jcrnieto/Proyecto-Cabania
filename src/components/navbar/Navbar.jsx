@@ -1,4 +1,4 @@
-//import React, { useState } from 'react';
+import React, { useState } from 'react';
 import {
   ContainerNavbar,
   UlListNavbar,
@@ -16,7 +16,8 @@ import {
   // MenuHamburguerNavbar,
   // MenuItemsNavbar,
   ContainerGeneralNavbar,
-  ContainerHamburguerNavbar
+  ContainerHamburguerNavbar,
+  ButtonMenuHamburguer
 }
   from "./navbarStyle";
 import { LuInstagram } from 'react-icons/lu';
@@ -25,26 +26,23 @@ import { BsFillHouseDoorFill } from 'react-icons/bs';
 import { BsImages } from 'react-icons/bs';
 import { FaBed } from 'react-icons/fa';
 import { BiMessageDetail } from 'react-icons/bi';
-// import { HiOutlineMenuAlt1 } from 'react-icons/hi';
+import { HiOutlineMenuAlt1 } from 'react-icons/hi';
 import logo from '../../../image/logo-blanco.png';
-import MenuHamburguer from "../menuHamburguer/MenuHamburguer";
+//import MenuHamburguer from "../menuHamburguer/MenuHamburguer";
 
 
 
 
 const Navbar = () => {
 
-   // const [isMobile, setIsMobile] = useState(true);
-
-  //  const toggleMenu = () => {
-  //    setVisibleMenu(!visibleMenu);
-  //  };
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const handleScroll = (event, targetId) => {
     event.preventDefault();
     const targetElement = document.getElementById(targetId);
     if (targetElement) {
       targetElement.scrollIntoView({ behavior: 'smooth' });
+      setMobileMenuOpen(false);
     }
   };
 
@@ -65,7 +63,7 @@ const Navbar = () => {
    
            <LiListNavbar>
              <ImageIconNavbar>
-               <BsImages />
+               <BsImages/>
              </ImageIconNavbar>
              <EnlaceListNavbar href="#galeria" onClick={(e) => handleScroll(e, 'galeria')}>Galeria</EnlaceListNavbar>
            </LiListNavbar>
@@ -93,14 +91,13 @@ const Navbar = () => {
              <LuInstagram />
            </InstagramIconNavbar>
          </RedesContainerNavbar>
-       {/* <MenuHamburguerNavbar >
-        <HiOutlineMenuAlt1/>
-        </MenuHamburguerNavbar>  */}
         </ContainerNavbar>
 
-        <ContainerHamburguerNavbar>
-        <MenuHamburguer/>
-        </ContainerHamburguerNavbar>
+         <ContainerHamburguerNavbar>
+           <ButtonMenuHamburguer onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
+              <HiOutlineMenuAlt1/>
+           </ButtonMenuHamburguer>
+         </ContainerHamburguerNavbar> 
 
       </ContainerGeneralNavbar>
   )
@@ -108,7 +105,3 @@ const Navbar = () => {
 
 export default Navbar
 
-
-
-{/* <MenuItemsNavbar>
-</MenuItemsNavbar> */}
