@@ -5,13 +5,18 @@ export const ContainerGeneralNavbar = styled.div`
 
 
 export const ContainerNavbar = styled.div`
+
   position: fixed;
   width: 200px;
   height: 100%;
   background-color: #a1031d;
+  display: block;
+  
 
   @media (max-width: 768px){
-    z-index: 999;  
+    z-index: 999;
+    transform: translateX(${({ mobileMenuOpen }) => (mobileMenuOpen ? '-200px' : '0')});
+    transition: transform 0.4s ease-in-out;
    }  
 `
 
@@ -19,16 +24,25 @@ export const UlListNavbar = styled.ul`
   list-style: none;
   text-align: center;
   margin-top: 50px;
+
 `
 
 export const LiListNavbar = styled.li`
   margin-top: 30px;
   display: flex;
+
 `
 
 export const EnlaceListNavbar= styled.a`
   text-decoration: none;
   color: white;
+
+  @media (max-width: 768px){
+    z-index: 999;
+    transform: translateX(${({ mobileMenuOpen }) => (mobileMenuOpen ? '-200px' : '0')});
+    transition: transform 0.4s ease-in-out;
+   }  
+
 `
 
 export const ContainerLogoNavbar = styled.div`
