@@ -7,6 +7,7 @@ import Services from './components/services/Services';
 import slidesInfo from '../date';
 import Location from './components/location/Location';
 import Form from './components/form/Form';
+import ModalImage from './components/modalImage/ModalImage';
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
      <Services/>
      <Location/>
      <Form/>
+     <ModalImage/>
     </div>
   )
 }

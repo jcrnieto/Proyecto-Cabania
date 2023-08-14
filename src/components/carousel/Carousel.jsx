@@ -1,18 +1,41 @@
-import { ContainerCarousel, TitleCarousel, ContainerSliders, SlideContainer, ImgSlide, ContainerImg } from "./carouselStyle.js";
+import { useState } from 'react';
+import {
+   ContainerCarousel,
+   TitleCarousel,
+   ContainerSliders,
+   SlideContainer,
+   ImgSlide, 
+   ContainerImg,
+  //  ModalOverlay,
+  //  ModalContainer,
+  //  CloseButton
+   } from "./carouselStyle.js";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Scrollbar, A11y, Autoplay} from 'swiper/modules';
-
 
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import 'swiper/css/autoplay';
+import ModalImage from '../modalImage/ModalImage.jsx';
 
 
 
 const carouselStyle = ({slidesInfo}) => {
-    console.log(slidesInfo)
+    // console.log(slidesInfo)
+  const [modalOpen, setModalOpen] = useState(false);
+  const [selectedImage, setSelectedImage] = useState('');
+
+  const openModal = (imageSrc) => {
+    setSelectedImage(imageSrc);
+    setModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setModalOpen(false);
+  };
+  
     
   return (
      <ContainerCarousel id="galeria">
@@ -43,16 +66,17 @@ const carouselStyle = ({slidesInfo}) => {
             {
                slidesInfo.map(slide =>(
                 <SwiperSlide key={slide.id}>
-                    <SlideContainer>
+                   <SlideContainer onClick={() => openModal(slide.src)}>
                        <ContainerImg>
                           <ImgSlide src={slide.src}/>
                         </ContainerImg>
                       </SlideContainer>
-                </SwiperSlide>
-               )) 
+                    </SwiperSlide> 
+                )) 
             }
         </Swiper>
         </ContainerSliders>
+        <ModalImage open={modalOpen} onClose={closeModal} imageSrc={selectedImage}/>
      </ContainerCarousel>
   )
 }

@@ -15,6 +15,10 @@ export const ContainerIntro = styled.section`
       margin-left:0;
       width:auto;
    }
+
+   @media (min-width: 800px) and (max-width: 1024px) {
+    width:auto;
+  }
  `
 
 export const LogoContainerIntro = styled.div`
@@ -34,6 +38,8 @@ export const LogoImageIntro = styled.img`
   @media (max-width: 767px) {
    
   }
+
+  
 `
 
 export const DescriptionIntro = styled.h3`
@@ -111,5 +117,9 @@ export const ContainerOpacityIntro = styled.div`
   
   @media (max-width: 767px) {
      width: auto;
+  }
+
+  @media (min-width: 800px) and (max-width: 1024px) {
+    width:auto;
   }
 `

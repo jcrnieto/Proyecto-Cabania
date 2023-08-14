@@ -14,7 +14,16 @@ export const ContainerHousing = styled.section`
       margin-left: 0; 
       width:auto;
       height: auto;
-     
+   }
+
+   @media (min-width: 800px) and (max-width: 1023px) {
+      
+      display: flex;
+      flex-direction: column;
+      margin-left: 0; 
+      width:auto;
+      height: auto;
+    
    }
 `
 
@@ -31,6 +40,11 @@ export const TextHousing = styled.p`
    color: black;
    text-align: center;
    font-size: 25px;
+
+   @media (min-width: 769px) and (max-width: 1024px) {
+    width:auto;
+    font-size: 25px;
+  }
 `
 
 export const ImgContainerHousing = styled.div`
@@ -49,6 +63,9 @@ export const ImgHousing = styled.img`
   float: right;
   border-radius: 20px;
   margin-right: 10px;
-
+  
+  @media (min-width: 769px) and (max-width: 1024px) {
+    
+   }
   
 `

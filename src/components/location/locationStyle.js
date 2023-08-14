@@ -13,6 +13,12 @@ export const LocationContainer = styled.section`
       width:auto; 
       height: 80%;
    }
+
+   @media (min-width: 800px) and (max-width: 1024px) {
+      width:auto; 
+     
+   }
+   
 `
 
 export const TitleLocation = styled.h1`
@@ -37,5 +43,10 @@ export const ContainerMapLocation = styled.div`
       width:300px;
       margin-left: auto;
       margin-right: auto;
+   }
+
+   @media (min-width: 800px) and (max-width: 1024px) {
+      width:auto; 
+     
    }
 `

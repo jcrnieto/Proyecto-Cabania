@@ -13,12 +13,23 @@ export const ContainerService = styled.section`
       width:auto;
       height: auto;
    }
+
+   @media (min-width: 800px) and (max-width: 1024px) {
+    /* width: auto;
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente 
+    align-items: center; 
+    flex-wrap: wrap; */
+     
+   }
+   
+  
+
 `
 
 export const TitleService = styled.h1`
    color:#a4aba8;
    text-align: center;
-   /* margin-top: 40px; */
    margin-bottom: 40px;
    padding-top: 20px;
    font-size: 35px
@@ -29,8 +40,9 @@ export const ContainerCard = styled.div`
    @media (max-width: 767px) {
       display: flex;
       flex-direction: column;
-      
    }
+
+  
 `
 
 export const ServiceCard = styled.div`

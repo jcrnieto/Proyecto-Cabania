@@ -10,7 +10,12 @@ export const ContainerCarousel = styled.section`
       margin-left: 0;
       width:auto;  
       height: auto;
-      
+   }
+
+   @media (min-width: 800px) and (max-width: 1024px) {
+    width:auto;
+    padding-top: 0px;
+    
    }
 `
 
@@ -41,6 +46,7 @@ export const ImgSlide = styled.img`
    border-radius: 50px; 
    display: block;
    object-fit: cover;
+   cursor: pointer;
 
      @media (max-width: 767px) {
       width: 100%;
@@ -52,3 +58,4 @@ export const ImgSlide = styled.img`
 export const ContainerImg = styled.div`
 
 `
+
