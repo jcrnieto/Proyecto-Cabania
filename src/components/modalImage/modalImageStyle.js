@@ -19,8 +19,8 @@ export const ModalOverlay = styled.div`
     
       height: 100vh;
       width: 100%;
-      padding-left: 0;
-      padding-right: 0; 
+      padding: 40px;
+     
       padding-top: 80px;
       margin-left: 0;
       margin-right: 0;
@@ -59,9 +59,12 @@ export const ModalContainer = styled.div`
     object-fit: cover;
 
     @media (max-width: 767px) {
-      width: 330px;
+      
+      width: 100%;
       height: 100%;
       object-fit: cover;
       border-radius: 20px;
+      padding-left: auto;
+      padding-right: auto;
    }  
  `
