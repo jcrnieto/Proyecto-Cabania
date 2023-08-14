@@ -108,7 +108,7 @@ export const EnlaceButtonIntro = styled.a`
 export const ContainerOpacityIntro = styled.div`
   width: 900px;
   height: 500px;
-  background-color: rgba(255, 255, 255, 0.2);;
+  background-color: rgba(255, 255, 255, 0.3);;
   margin-left: auto;
   margin-right: auto;
   border-radius: 30px;

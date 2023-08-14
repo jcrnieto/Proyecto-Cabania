@@ -12,7 +12,7 @@ export const ModalOverlay = styled.div`
   padding-left: 130px;
   padding-top: 60px;
   z-index: 999;
-  background-color: rgba(0, 0, 0, 0.5); 
+  background-color: rgba(0, 0, 0, 0.9); 
   display: ${({ open }) => ( open ? 'block' : 'none')};
   
   @media (max-width: 767px) {
@@ -45,7 +45,7 @@ export const ModalContainer = styled.div`
    font-size: 40px;
    transition: .3sg ease all;
    border-radius: 5px;
-   color: #1766dc;
+  
 
    &:hover{
      background: #f2f2f2;

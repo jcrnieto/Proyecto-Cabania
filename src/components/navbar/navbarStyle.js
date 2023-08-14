@@ -17,6 +17,7 @@ export const ContainerNavbar = styled.div`
     z-index: 999;
     transform: translateX(${({ mobileMenuOpen }) => (mobileMenuOpen ? '-200px' : '0')});
     transition: transform 0.4s ease-in-out;
+    width: 180px;
    }  
 `
 
@@ -101,13 +102,17 @@ export const ContainerHamburguerNavbar = styled.div`
        display: block;
        position: fixed;
        z-index: 999;
-       margin-left: 55%;
-       margin-top: 10px;
+       margin-left: 50%;
+       padding-top: 30px;
+       
    }
 `
 
 export const ButtonMenuHamburguer = styled.button`
-     font-size: 20px;
+     font-size: 30px;
+     background-color: #6d6d70;
+     border-radius: 10px;
+     padding-top: 5px;
 
 `
 
