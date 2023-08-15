@@ -6,12 +6,12 @@ import {
    SlideContainer,
    ImgSlide, 
    ContainerImg,
-  //  ModalOverlay,
-  //  ModalContainer,
-  //  CloseButton
-   } from "./carouselStyle.js";
+} from "./carouselStyle.js";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Scrollbar, A11y, Autoplay} from 'swiper/modules';
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -20,10 +20,12 @@ import 'swiper/css/scrollbar';
 import 'swiper/css/autoplay';
 import ModalImage from '../modalImage/ModalImage.jsx';
 
-
-
 const carouselStyle = ({slidesInfo}) => {
-    // console.log(slidesInfo)
+   
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
+
   const [modalOpen, setModalOpen] = useState(false);
   const [selectedImage, setSelectedImage] = useState('');
 
@@ -38,7 +40,7 @@ const carouselStyle = ({slidesInfo}) => {
   
     
   return (
-     <ContainerCarousel id="galeria">
+     <ContainerCarousel id="galeria" data-aos="fade-up">
         <TitleCarousel> Galeria de Foros</TitleCarousel>
         <ContainerSliders>
         <Swiper

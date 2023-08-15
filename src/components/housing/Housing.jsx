@@ -1,9 +1,18 @@
 import { ContainerHousing, TitleHousing, TextHousing, ImgContainerHousing, ImgHousing } from "./housingStyle";
 import imgHousing from "../../../image/housing.jpeg";
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
+
 
 const Housing = () => {
+
+    useEffect(() => {
+        Aos.init({ duration: 2000 });
+      }, []);
+
     return (
-        <ContainerHousing id="intro">
+        <ContainerHousing id="intro" data-aos="fade-up">
             <TitleHousing>El Complejo</TitleHousing>
             <ImgContainerHousing>
                 <ImgHousing src={imgHousing}/>

@@ -81,10 +81,10 @@ const Navbar = () => {
          </UlListNavbar>
 
          <RedesContainerNavbar>
-           <WattsapIconNavbar>
+           <WattsapIconNavbar href="https://wa.me/+543516468746" target="_blank">
              <BsWhatsapp />
            </WattsapIconNavbar>
-           <InstagramIconNavbar>
+           <InstagramIconNavbar href="https://instagram.com/balcon_del_rio_cabana?igshid=MzRlODBiNWFlZA==" target="_blank">
              <LuInstagram />
            </InstagramIconNavbar>
          </RedesContainerNavbar>

@@ -28,9 +28,9 @@ const infoService = [
 ]
 
 const Services = () => {
-    //console.log(infoService)
-  return (
-     <ContainerService id='servicios'>
+    
+   return (
+     <ContainerService id='servicios' >
          <TitleService>Contamos con todos los servicios</TitleService>
          <ContainerCard>
          {

@@ -63,13 +63,13 @@ export const RedesContainerNavbar = styled.div`
    margin-top: 100px;
 `
 
-export const WattsapIconNavbar = styled.div`
+export const WattsapIconNavbar = styled.a`
     font-size: 28px;
     margin-right:5px;
     cursor: pointer;
 `
 
-export const InstagramIconNavbar = styled.div`
+export const InstagramIconNavbar = styled.a`
     font-size: 28px;
     margin-left:5px;
     cursor: pointer;

@@ -1,13 +1,21 @@
 import { LocationContainer, TitleLocation, DescriptionLocation, ContainerMapLocation } from "./locationStyle";
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
+
 
 const Location = () => {
 
     const location = [-31.721238416452046, -64.4173033335611];
 
+    useEffect(() => {
+        Aos.init({ duration: 2000 });
+      }, []);
+
     return (
-        <LocationContainer>
+        <LocationContainer data-aos="fade-up">
             <TitleLocation> Ubicación</TitleLocation>
             <DescriptionLocation>
             Estamos ubicados en el valle de precordillera Potrerillos, a 70 km al sur-oeste de la ciudad de Mendoza.
