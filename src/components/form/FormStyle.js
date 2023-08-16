@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const FormContainer = styled.section`
-  height: 90vh;
+  height: 100vh;
   width: 85%;
   background-color: #e8e8e8;
   margin-left: 200px;
@@ -10,8 +10,10 @@ export const FormContainer = styled.section`
   @media (max-width: 767px) {
       margin-left: 0; 
       width: auto;
-      height: 90%;
-   }
+      height: 100%;
+      padding-top: 20px;
+      padding-bottom: 20px;
+  }
 `
 export const ContainerForm = styled.form`
   display: flex;
@@ -23,7 +25,7 @@ export const ContainerForm = styled.form`
   transition: .4s ease-in-out;
   box-shadow: rgba(0, 0, 0, 0.4) 1px 2px 2px;
   width: 800px;
-  height: 400px;
+  height: 430px;
   margin-left: 130px;
   
   &:hover {
@@ -33,12 +35,11 @@ export const ContainerForm = styled.form`
   }
 
   @media (max-width: 767px) {
-     margin-left: 0;
      width:auto;
-     margin-bottom: 80px;
      margin-left: 13px;
      margin-right: 13px;
-   }
+    
+  }
 `
 
 export const TextForm = styled.p`
@@ -47,6 +48,7 @@ export const TextForm = styled.p`
   font-weight: bold;
   font-size: 30px;
   margin-top: 0;
+  margin-bottom: 0;
 `
 
 export const InputName = styled.input`
@@ -56,8 +58,9 @@ export const InputName = styled.input`
   outline: none;
   padding: 1em;
   transition: .4s ease-in-out;
-  margin-bottom:8px;
+  margin-bottom:20px;
   color: black;
+  
 
   &:hover {
   box-shadow: 6px 6px 0px #969696,
@@ -77,7 +80,7 @@ export const InputMail = styled.input`
   outline: none;
   padding: 1em;
   transition: .4s ease-in-out;
-  margin-bottom:8px;
+  margin-bottom:20px;
   color: black;
 
   &:hover {
@@ -98,7 +101,7 @@ export const InputPhone = styled.input`
   outline: none;
   padding: 1em;
   transition: .4s ease-in-out;
-  margin-bottom:8px;
+  margin-bottom:20px;
   color: black;
 
   &:hover {
@@ -157,3 +160,4 @@ export const ButtonSubmit = styled.button`
   box-shadow: none;
   }
 `
+

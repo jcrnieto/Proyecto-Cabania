@@ -6,7 +6,9 @@ import {
     InputMail, 
     InputPhone, 
     InputMessage, 
-    ButtonSubmit} from "./FormStyle";
+    ButtonSubmit,
+    //Error
+} from "./FormStyle";
 import { useForm } from 'react-hook-form';
 import { useRef } from 'react';
 import emailjs from '@emailjs/browser';
@@ -42,7 +44,7 @@ const Form = () => {
     };
     
  return (
-      <FormContainer id="contacto" data-aos="flip-left">
+      <FormContainer id="contacto" >
           <ContainerForm ref={form} onSubmit={handleSubmit(onSubmit)}>
               <TextForm> Contacto</TextForm>
               <InputName 
@@ -53,31 +55,49 @@ const Form = () => {
                     pattern: /[a-zA-Z ]{2,254}/,
                     required:true,
                    })}/>
-                   {errors.user_name?.type === 'required' && <p style={{color:'red'}}>El campo nombre es requerido</p>}
-                   {errors.user_name?.type ==='pattern'  && <p style={{color:'red'}}>El campo nombre es incorrecto</p>}
+                   {errors.user_name?.type === 'required' && 
+                    <div style={{marginTop:'-20px'}}>
+                      <p style={{color:'red', margin: 0}}> El campo nombre es requerido</p>
+                    </div>}
+                   {errors.user_name?.type ==='pattern'  && 
+                    <div style={{marginTop:'-20px'}}>
+                      <p style={{color:'red', margin: 0}}>El campo nombre es incorrecto</p>
+                    </div>}
               <InputMail
-                   placeholder="Mail"
-                   type="email"
+                   placeholder="Email"
+                   type="name"
                    name='user_email'
                    {...register('user_email',{
                     required:true,
                     pattern: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/
                    })}/>
-                   {errors.user_email?.type === 'required' && <p style={{color:'red'}}>El campo email es requerido</p>}
-                   {errors.user_email?.type ==='pattern'  && <p style={{color:'red'}}>El campo email es incorrecto</p>}
+                   {errors.user_email?.type === 'required' && 
+                   <div style={{marginTop:'-20px'}}>
+                      <p style={{color:'red', margin: 0}}>El campo email es requerido</p>
+                   </div>}
+                   {errors.user_email?.type ==='pattern'  &&
+                    <div style={{marginTop:'-20px'}}>
+                       <p style={{color:'red', margin: 0}}>El campo email es incorrecto</p>
+                    </div>}
               <InputPhone
                    placeholder="Teléfono"
                    type="number"
                    {...register('user_phone',{
                     required:true
                     })}/>
-                   {errors.user_phone?.type === 'required' && <p style={{color:'red'}}>El campo telefono es requerido</p>}
+                   {errors.user_phone?.type === 'required' &&
+                   <div style={{marginTop:'-20px'}}>
+                      <p style={{color:'red', margin: 0}}>El campo telefono es requerido</p>
+                   </div>}
               <InputMessage 
                    placeholder="Mensaje"
                    {...register('message',{
                     required:true 
                     })}/>
-                    {errors.message?.type === 'required' && <p style={{color:'red'}}>El campo mensaje es requerido</p>}
+                    {errors.message?.type === 'required' && 
+                    <div style={{marginTop:'-10px'}}>
+                       <p style={{color:'red'}}>El campo mensaje es requerido</p>
+                    </div>}
               <ButtonSubmit>Enviar</ButtonSubmit>
           </ContainerForm>
       </FormContainer>
