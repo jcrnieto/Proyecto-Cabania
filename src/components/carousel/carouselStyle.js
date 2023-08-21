@@ -12,9 +12,8 @@ export const ContainerCarousel = styled.section`
       height: auto;
    }
 
-   @media (min-width: 800px) and (max-width: 1024px) {
+   @media (max-width: 1120px) {
     width:auto;
-    padding-top: 0px;
     
    }
 `
@@ -53,7 +52,8 @@ export const ImgSlide = styled.img`
       height: 100%;
       object-fit: cover;
       border-radius: 50px;
-   }  
+   } 
+     
 `
 export const ContainerImg = styled.div`
 

@@ -16,8 +16,9 @@ export const ContainerIntro = styled.section`
       width:auto;
    }
 
-   @media (min-width: 800px) and (max-width: 1024px) {
-    width:auto;
+   @media (max-width: 1120px) {
+      width: auto;
+     
   }
  `
 
@@ -58,6 +59,10 @@ export const DescriptionIntro = styled.h3`
     font-size: 20px;
     width: auto;
   }
+
+  @media (max-width: 1120px) {
+    width:auto;
+ }
 `
 
 export const ContainerButtonIntro = styled.div`
@@ -69,6 +74,7 @@ export const ContainerButtonIntro = styled.div`
     text-align: center;
     margin-top: 80px;
   }
+ 
 `
 
 export const ButtonIntro = styled.button`
@@ -119,7 +125,9 @@ export const ContainerOpacityIntro = styled.div`
      width: auto;
   }
 
-  @media (min-width: 800px) and (max-width: 1024px) {
+  @media (max-width: 1120px) {
     width:auto;
+    margin-left: 10px;
+    margin-right: 10px;
   }
 `

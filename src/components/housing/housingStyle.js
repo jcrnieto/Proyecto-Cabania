@@ -16,15 +16,12 @@ export const ContainerHousing = styled.section`
       height: auto;
    }
 
-   @media (min-width: 800px) and (max-width: 1023px) {
-      
+   @media (max-width: 1120px) {
+      width: auto;
       display: flex;
       flex-direction: column;
-      margin-left: 0; 
-      width:auto;
       height: auto;
-    
-   }
+  }
 `
 
 export const TitleHousing = styled.h1`
@@ -41,9 +38,9 @@ export const TextHousing = styled.p`
    text-align: center;
    font-size: 25px;
 
-   @media (min-width: 769px) and (max-width: 1024px) {
+   @media (max-width: 1024px) {
     width:auto;
-    font-size: 25px;
+   
   }
 `
 
@@ -51,6 +48,16 @@ export const ImgContainerHousing = styled.div`
    @media (max-width: 767px) {
      margin-right: auto; 
      margin-left: auto;
+   }
+
+   @media (max-width: 1120px) {
+      width: auto;
+   }
+
+   @media (max-width: 1024px) {
+     margin-right: auto;
+     margin-left: auto;
+      
    }
 `
 
@@ -64,8 +71,14 @@ export const ImgHousing = styled.img`
   border-radius: 20px;
   margin-right: 10px;
   
-  @media (min-width: 769px) and (max-width: 1024px) {
-    
+  @media (max-width: 1120px) {
+      width: 700px;
+      margin-right: 100px;
+   }
+
+   @media (max-width: 1024px) {
+      width: 300px;
+      margin-right: 0;
    }
   
 `

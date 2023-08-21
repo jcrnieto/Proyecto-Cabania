@@ -14,6 +14,10 @@ export const FormContainer = styled.section`
       padding-top: 20px;
       padding-bottom: 20px;
   }
+
+  @media (max-width: 1120px) {
+      width: auto;
+  }
 `
 export const ContainerForm = styled.form`
   display: flex;
@@ -39,6 +43,12 @@ export const ContainerForm = styled.form`
      margin-left: 13px;
      margin-right: 13px;
     
+  }
+
+  @media (max-width: 1120px) {
+      width: auto;
+      margin-left: 20px;
+      margin-right: 20px;
   }
 `
 

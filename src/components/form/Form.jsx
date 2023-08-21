@@ -44,7 +44,7 @@ const Form = () => {
     };
     
  return (
-      <FormContainer id="contacto" >
+      <FormContainer id="contacto" data-aos="fade-up">
           <ContainerForm ref={form} onSubmit={handleSubmit(onSubmit)}>
               <TextForm> Contacto</TextForm>
               <InputName 

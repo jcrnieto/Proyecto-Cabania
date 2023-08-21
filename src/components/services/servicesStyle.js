@@ -14,17 +14,10 @@ export const ContainerService = styled.section`
       height: auto;
    }
 
-   @media (min-width: 800px) and (max-width: 1024px) {
-    /* width: auto;
-    display: flex;
-    justify-content: center; /* Centrar horizontalmente 
-    align-items: center; 
-    flex-wrap: wrap; */
-     
-   }
-   
-  
-
+   @media (max-width: 1120px) {
+      width: auto;
+      height: auto;
+  }
 `
 
 export const TitleService = styled.h1`
@@ -36,11 +29,16 @@ export const TitleService = styled.h1`
 `
 export const ContainerCard = styled.div`
    display: flex;
+   flex-wrap: wrap;
    
    @media (max-width: 767px) {
       display: flex;
       flex-direction: column;
    }
+
+   @media (max-width: 1120px) {
+      padding-bottom: 20px;
+  }
 
   
 `
@@ -56,8 +54,15 @@ export const ServiceCard = styled.div`
    @media (max-width: 767px) {
       margin-top: 15px;
       margin-bottom: 15px;
-     margin-left: auto;
-     margin-right: auto;
+      margin-left: auto;
+      margin-right: auto;
+   }
+
+   @media (max-width: 1120px) {
+      width: 40%;
+      margin: auto;
+      margin-bottom: 20px;
+      
    }
    
 `
