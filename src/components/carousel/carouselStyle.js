@@ -36,6 +36,10 @@ export const SlideContainer = styled.div`
   text-align: center;
   justify-content: center;
   align-items: center;
+
+  @media (max-width: 767px) {
+      margin-bottom: 20px;
+     } 
 `
 
 export const ImgSlide = styled.img`
@@ -52,7 +56,7 @@ export const ImgSlide = styled.img`
       height: 100%;
       object-fit: cover;
       border-radius: 50px;
-   } 
+     } 
      
 `
 export const ContainerImg = styled.div`

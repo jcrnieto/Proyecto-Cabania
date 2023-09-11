@@ -27,7 +27,7 @@ const Intro = () => {
               <LogoImageIntro src={logo}/>
          </LogoContainerIntro>
          <DescriptionIntro>
-             Estratégicamente ubicadas en la precordillera medocina de Potrerillos.
+             Estratégicamente ubicadas en el valle de Paravachasca.
              Relájese con comodidad y disfrute de nuestros hermosos paisajes.
          </DescriptionIntro>
         <ContainerButtonIntro>

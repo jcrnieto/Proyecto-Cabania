@@ -156,6 +156,7 @@ export const ButtonSubmit = styled.button`
   color: black;
   transition: .4s ease-in-out;
   box-shadow: rgba(0, 0, 0, 0.4) 1px 1px 1px;
+  background: #dfe0eb;
  
 
   &:hover {

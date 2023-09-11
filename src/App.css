@@ -14,9 +14,8 @@ body, html, #root {
 
 @media (max-width: 1024px) {
   .body, html, #root{
-    overflow-x: hidden;
+    margin: 0;
     padding: 0;
-    width: 100%;
   }
 }
 

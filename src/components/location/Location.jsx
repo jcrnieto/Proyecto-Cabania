@@ -18,8 +18,8 @@ const Location = () => {
         <LocationContainer data-aos="fade-up">
             <TitleLocation> Ubicación</TitleLocation>
             <DescriptionLocation>
-            Estamos ubicados en el valle de precordillera Potrerillos, a 70 km al sur-oeste de la ciudad de Mendoza.
-            Complejo El Plata, Avenida del Sol 2123, Piedras Blancas, Potrerillos, Mendoza.
+            Estamos ubicados en el valle de Paravachasca, a 46 km al sur-oeste de la ciudad de Córdoba.
+            Balcón del Río, Avenida del Sol 2123, La Bolsa, Córdoba.
             </DescriptionLocation>
             <ContainerMapLocation>
             <MapContainer center={location} zoom={13} style={{ height: '400px'}}>

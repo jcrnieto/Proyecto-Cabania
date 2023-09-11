@@ -17,7 +17,7 @@ export const ContainerNavbar = styled.div`
     z-index: 999;
     transform: translateX(${({ mobileMenuOpen }) => (mobileMenuOpen ? '-200px' : '0')});
     transition: transform 0.4s ease-in-out;
-    width: 180px;
+    width: 170px;
    }  
 `
 
@@ -67,12 +67,14 @@ export const WattsapIconNavbar = styled.a`
     font-size: 28px;
     margin-right:5px;
     cursor: pointer;
+    color: #1dde20;
 `
 
 export const InstagramIconNavbar = styled.a`
     font-size: 28px;
     margin-left:5px;
     cursor: pointer;
+    color:#de1dc4;
 `
 
 export const HouseIconNavbar = styled.div`
@@ -102,7 +104,7 @@ export const ContainerHamburguerNavbar = styled.div`
        display: block;
        position: fixed;
        z-index: 999;
-       margin-left: 50%;
+       margin-left: 47%;
        padding-top: 30px;
        
    }

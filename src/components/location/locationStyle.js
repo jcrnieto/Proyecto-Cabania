@@ -30,6 +30,10 @@ export const DescriptionLocation = styled.h4`
   color: black;
   text-align: center;
   font-size: 20px;
+
+  @media (max-width: 767px) {
+     margin: 20px;
+   }
 `
 
 export const ContainerMapLocation = styled.div`

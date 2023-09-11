@@ -30,7 +30,11 @@ import logo from '../../../image/logo-blanco.png';
 
 const Navbar = () => {
 
- const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+ const [mobileMenuOpen, setMobileMenuOpen] = useState(true);
+
+  const handleMenu = () => {
+    setMobileMenuOpen(!mobileMenuOpen)
+  } 
 
  const handleScroll = (event, targetId) => {
     event.preventDefault();
