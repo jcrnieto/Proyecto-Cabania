@@ -103,6 +103,10 @@ export const ButtonIntro = styled.button`
   &:focus {
   box-shadow: 0 4px 3px 1px #FCFCFC, 0 6px 8px #D6D7D9, 0 -4px 4px #CECFD1, 0 -6px 4px #FEFEFE, inset 0 0 5px 3px #999, inset 0 0 30px #aaa;
   }
+  
+  @media (max-width: 767px) {
+     margin-top: 20px;
+  }
 
   
 `

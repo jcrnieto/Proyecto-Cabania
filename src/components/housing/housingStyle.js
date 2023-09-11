@@ -40,7 +40,7 @@ export const TextHousing = styled.p`
 
    @media (max-width: 1024px) {
     width:auto;
-   
+    margin: 20px;
   }
 `
 
